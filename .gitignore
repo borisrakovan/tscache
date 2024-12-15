@@ -1,11 +1,44 @@
-/tmp
-/out-tsc
+### GENERAL
 
-/node_modules
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-/.pnp
-.pnp.js
+# Windows
+Thumbs.db
+Desktop.ini
 
+# macOS
+.DS_Store
+.supported
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
 .vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# local-only files (may be useful during development)
+*.local.*
+*.local
+
+# Ignore nested node_module directories
+# This is useful when switching between development branches where the nested .gitignore file is not yet in main
+**/node_modules/*
+
+# Node.js, npm
+/node_modules/
+
+# local only files
+/playground/
+
+# CI temp output files
+/temp/
+
+/dist/
